@@ -2,7 +2,6 @@
   "name": "akashic-putnam-courts",
   "version": "1.0.0",
   "description": "Putnam County TN courts and federal Maryland TN connectors",
-  "private": true,
   "license": "AGPL-3.0-or-later",
   "main": "index.js",
   "exports": {
@@ -23,5 +22,16 @@
   "devDependencies": {
     "pytest": "^8.0.0",
     "httpx": "^0.27.0"
+  },
+  "files": [
+    "lib/**/*",
+    "app/**/*",
+    "components/**/*",
+    "index.js",
+    "README.md",
+    "package.json"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
