@@ -1,9 +1,16 @@
 {
   "name": "akashic-putnam-courts",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Putnam County TN courts and federal Maryland TN connectors",
   "private": true,
   "license": "AGPL-3.0-or-later",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./lib/putnam-courts": "./lib/putnam-courts",
+    "./lib/connectors/putnam-county-tn": "./lib/putnam-courts/src/connectors/putnam-county-tn",
+    "./lib/connectors/federal-md-tn": "./lib/connectors/federal-md-tn"
+  },
   "scripts": {
     "test": "python -m pytest tests/",
     "validate": "python -m pytest tests/"
